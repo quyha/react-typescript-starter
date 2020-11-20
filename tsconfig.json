@@ -1,0 +1,40 @@
+{
+  "compilerOptions": {
+    "allowSyntheticDefaultImports": true,
+    "outDir": "./dist/",
+    "sourceMap": true,
+    "skipLibCheck": true,
+    "noImplicitAny": false,
+    "noImplicitReturns": true,
+    "noImplicitThis": true,
+    "noUnusedLocals": true,
+    "noUnusedParameters": true,
+    "module": "esnext",
+    "moduleResolution": "node",
+    "target": "es5",
+    "jsx": "react",
+    "lib": [
+        "ES2015",
+        "ES2016",
+        "ES2017",
+        "ES2018",
+        "ES2019",
+        "ES2020",
+        "ESNext",
+        "dom"
+    ],
+    "baseUrl": ".",
+    "paths": {
+        "@api/*": ["./src/api/*"],
+        "@features/*": ["./src/features/*"],
+        "@constants/*": ["./src/constants/*"],
+        "@elements/*": ["./src/elements/*"],
+        "@hook/*": ["./src/hook/*"],
+        "@routes/*": ["./src/routes/*"],
+        "@services/*": ["./src/services/*"],
+        "@utils/*": ["./src/utils/*"],
+        "@styles/*": ["./src/public/styles/*"],
+    },
+    "importsNotUsedAsValues": "preserve"
+  }
+}
