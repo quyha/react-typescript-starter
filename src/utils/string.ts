@@ -91,6 +91,10 @@ function getHostnameFromUrl(path: string): string {
     return url.hostname;
 }
 
+function uid(): string {
+    return performance.now().toString(36) + Math.random().toString(36).substr(2);
+}
+
 export {
     buildPath,
     parseSearch,
@@ -99,4 +103,5 @@ export {
     camelCase,
     formatNumber,
     getHostnameFromUrl,
+    uid,
 };
